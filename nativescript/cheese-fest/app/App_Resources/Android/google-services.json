@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "425261093026",
+    "firebase_url": "https://cheeses-4fe5f.firebaseio.com",
+    "project_id": "cheeses-4fe5f",
+    "storage_bucket": "cheeses-4fe5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425261093026:android:4c42148a9d03ff6a",
+        "android_client_info": {
+          "package_name": "com.nativescript.cheesefest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425261093026-brbqurr5nf1acat09p038m9tj86drlm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCprXzNxFN2Utg69bqqPT6iIG0SmpjOOi4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

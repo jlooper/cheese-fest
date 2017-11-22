@@ -1,0 +1,26 @@
+{
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "com.nativescript.cheesefest",
+    "tns-ios": {
+      "version": "3.3.0"
+    }
+  },
+  "scripts": {
+    "lint": "eslint \"app/**/*.js\""
+  },
+  "dependencies": {
+    "nativescript-imagepicker": "4.0.1",
+    "nativescript-plugin-firebase": "4.2.1",
+    "nativescript-pro-ui": "3.2.0",
+    "nativescript-theme-core": "1.0.4",
+    "rxjs": "5.5.2",
+    "tns-core-modules": "3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "4.9.0"
+  }
+}

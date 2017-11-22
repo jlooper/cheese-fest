@@ -1,0 +1,31 @@
+<Page class="page" navigatingTo="onNavigatingTo"
+    xmlns:lv="nativescript-pro-ui/listview"
+    xmlns="http://schemas.nativescript.org/tns.xsd" >
+
+    <ActionBar class="action-bar">
+        <NavigationButton ios:visibility="collapsed" />
+        <Label class="action-bar-title" text="Cheeses" horizontalAlignment="center" />
+    </ActionBar>
+
+    <GridLayout class="page-content">
+        
+        <lv:RadListView items="{{ cheese }}" itemTap="onItemTap" class="list-group">
+            <lv:RadListView.listViewLayout>
+                <lv:ListViewLinearLayout scrollDirection="Vertical" />
+            </lv:RadListView.listViewLayout>
+
+            <lv:RadListView.itemTemplate>
+                <StackLayout class="list-group-item">
+
+                    <GridLayout columns="auto,2*" class="list-group-item-content">
+                        <Image col="0" width="100" height="100" stretch="aspectFit" src="{{ Image }}"/>
+                        <Label col="1" text="{{ Name }}" textWrap="true" class="text-primary" />
+                    </GridLayout>
+
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+
+        <ActivityIndicator busy="{{ isLoading }}" />
+    </GridLayout>
+</Page>

@@ -1,0 +1,9 @@
+@import "nativescript-theme-core/css/lemon.css";
+
+.description{
+    padding: 10;
+}
+
+.text-primary{
+    padding: 5;
+}
