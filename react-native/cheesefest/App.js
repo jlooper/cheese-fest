@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { AppRegistry, ListView, TouchableHighlight, Image, View, Text } from 'react-native';
+import { AppRegistry, ListView, TouchableHighlight, Button, Image, View, Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 const firebase = require('firebase');
-const ListItem = require('./components/ListItem');
 const firebaseConfig = {
   apiKey: "AIzaSyBmCm0beuV5YVKMNwrT2vHs9s9nGL2mr84",
   databaseURL: "https://cheeses-4fe5f.firebaseio.com"
@@ -11,6 +10,7 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 const styles = require('./styles.js')
 
 class ListScreen extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +19,7 @@ class ListScreen extends React.Component {
       })
     };
     this.itemsRef = this.getRef().child('Cheeses');
+    
  }
  getRef() {
   return firebaseApp.database().ref();
@@ -44,11 +45,12 @@ listenForItems(itemsRef) {
 }
 
 _renderItem(item) {
+  const { navigate } = this.props.navigation;
+  
   return (
-    <ListItem item={item}>
     <TouchableHighlight onPress={() => navigate('DetailScreen', { user: 'll' })}>
         <View style={styles.liContainer}>
-            <Image style={{ height:100, width: 100 }}
+        <Image style={{ height:100, width: 100 }}
             source={{uri: item.Image}}
             />
             <View style={styles.liTextContainer}>
@@ -56,7 +58,6 @@ _renderItem(item) {
             </View>
         </View>
       </TouchableHighlight>
-    </ListItem>
   );
 }
 
@@ -68,8 +69,9 @@ componentDidMount() {
     title: 'Cheeses',
     headerStyle: styles.navbar
   };
+  
   render() {
-    const { navigate } = this.props.navigation;
+    
     return (
       <View>
       <ListView
