@@ -34,6 +34,7 @@ listenForItems(itemsRef) {
       items.push({
         Name: child.val().Name,
         Image: child.val().Image,
+        Description: child.val().Description,
         _key: child.key
       });
     });
@@ -48,7 +49,7 @@ _renderItem(item) {
   const { navigate } = this.props.navigation;
   
   return (
-    <TouchableHighlight onPress={() => navigate('DetailScreen', { user: 'll' })}>
+    <TouchableHighlight onPress={() => navigate('DetailScreen', { Name:item.Name, Description:item.Description, Image:item.Image })}>
         <View style={styles.liContainer}>
         <Image style={{ height:100, width: 100 }}
             source={{uri: item.Image}}
@@ -73,7 +74,7 @@ componentDidMount() {
   render() {
     
     return (
-      <View>
+      <View style={styles.container}>
       <ListView
       dataSource={this.state.dataSource}
       renderRow={this._renderItem.bind(this)}
@@ -87,17 +88,26 @@ componentDidMount() {
 class DetailScreen extends React.Component {
   // Nav options can be defined as a function of the screen's props:
   static navigationOptions = ({ navigation }) => ({
-    title: `Chat with ${navigation.state.params.user}`,
+    title: `${navigation.state.params.Name}`,
+    headerStyle: styles.navbar,
+    headerTintColor: 'black',
   });
+
+  
   render() {
     // The screen's current route is passed in to `props.navigation.state`:
-    const { params } = this.props.navigation.state;
+    const { params } = this.props.navigation.state.params;
     return (
-      <View>
-        <Text>Chat with {params.user}</Text>
+      <View style={styles.container}>
+      <Image style={{ height:200, width: 400 }}
+      source={{uri: this.props.navigation.state.params.Image}}
+      />
+        <Text style={styles.detailText}>{this.props.navigation.state.params.Description}</Text>
       </View>
     );
   }
+
+  
 }
 
 export const CheeseFest = StackNavigator({
