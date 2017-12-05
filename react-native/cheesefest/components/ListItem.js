@@ -7,7 +7,7 @@ class ListItem extends Component {
   render() {
     return (
       <TouchableHighlight>
-        <View style={styles.liContainer}>
+        <View style={styles.liContainer}  onPress={() => navigate('DetailScreen', { user: 'll' })}>
             <Image style={{ height:100, width: 100 }}
             source={{uri: this.props.item.Image}}
             />
