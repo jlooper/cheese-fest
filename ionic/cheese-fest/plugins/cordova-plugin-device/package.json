@@ -1,0 +1,136 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-device@1.1.4",
+        "scope": null,
+        "escapedName": "cordova-plugin-device",
+        "name": "cordova-plugin-device",
+        "rawSpec": "1.1.4",
+        "spec": "1.1.4",
+        "type": "version"
+      },
+      "/Users/Looper/Documents/NativeScript/cheese-fest/ionic/cheese-fest"
+    ]
+  ],
+  "_from": "cordova-plugin-device@1.1.4",
+  "_id": "cordova-plugin-device@1.1.4",
+  "_inCache": true,
+  "_location": "/cordova-plugin-device",
+  "_nodeVersion": "6.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-device-1.1.4.tgz_1481568063967_0.07361319195479155"
+  },
+  "_npmUser": {
+    "name": "shazron",
+    "email": "shazron@gmail.com"
+  },
+  "_npmVersion": "3.10.9",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-device@1.1.4",
+    "scope": null,
+    "escapedName": "cordova-plugin-device",
+    "name": "cordova-plugin-device",
+    "rawSpec": "1.1.4",
+    "spec": "1.1.4",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.4.tgz",
+  "_shasum": "d5fe74712069d03f6d386ef0bd321b3abd0d38dc",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-device@1.1.4",
+  "_where": "/Users/Looper/Documents/NativeScript/cheese-fest/ionic/cheese-fest",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-device/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-device",
+    "platforms": [
+      "firefoxos",
+      "tizen",
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "browser",
+      "osx"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Device Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d5fe74712069d03f6d386ef0bd321b3abd0d38dc",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.4.tgz"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-device#readme",
+  "keywords": [
+    "cordova",
+    "device",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-tizen",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-browser",
+    "cordova-osx"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "csantanapr",
+      "email": "csantana23@gmail.com"
+    },
+    {
+      "name": "shazron",
+      "email": "shazron@gmail.com"
+    },
+    {
+      "name": "stevegill",
+      "email": "stevengill97@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-device",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-device.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.1.4"
+}

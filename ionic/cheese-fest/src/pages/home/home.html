@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar  color="primary">
+    <ion-title>
+      <div text-center>Cheese</div>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let cheese of cheeses | async" (click)="navigate(cheese)">
+    <ion-thumbnail item-start>
+      <img src="{{cheese.Image}}">
+    </ion-thumbnail>
+    <p>{{cheese.Name}}</p>
+  </ion-item>
+</ion-list>
+</ion-content>

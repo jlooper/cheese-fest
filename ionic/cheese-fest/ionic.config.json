@@ -1,0 +1,8 @@
+{
+  "name": "cheese-fest",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
