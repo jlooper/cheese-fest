@@ -16,5 +16,5 @@ You need to install flutter from http://flutter.io
 * Tools • Dart 1.25.0-dev.11.0
 
 
-## Developed by
+## Flutter demo developed by:
 Nathanael Anderson
